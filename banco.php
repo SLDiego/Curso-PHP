@@ -2,36 +2,12 @@
 
 // Uma função retorna um valor, ou seja, a chamada da função representa um valor após sua execução. 
 // Uma subrotina apenas executa um código isolado.
+//include e require -> inclui um arquivo externo
+//Caso o arquivo a ser incluído não seja encontrado, utilize require
+//Caso o arquivo não seja encontrado, include irá lançar um aviso (E_WARNING) enquanto require irá lançar um erro e não permitirá a execução do programa.
 
 
-function exibeMensagem(string $mensagem){
-    echo $mensagem . PHP_EOL;
-}
-
-function sacar(array $conta, float $valorASacar)
-{
-    if ($valorASacar > $conta['saldo']) {
-        exibeMensagem("Você não pode sacar este valor");
-    } else {
-        $conta['saldo'] -= $valorASacar;
-    }
-
-    return $conta;
-}
-
-
-
-function depositar(array $conta, float $valorADepositar)
-{
-	if ($valorADepositar < 0) {
-		echo "Você não pode fazer um deposito negativo" .PHP_EOL;
-	} else{
-		$conta['saldo'] += $valorADepositar;
-	}
-	return $conta;
-}
-
-
+include 'funcoes.php';
 
 
 $contasCorrentes = [
