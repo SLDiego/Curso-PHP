@@ -13,20 +13,20 @@ include 'funcoes.php';
 $contasCorrentes = [
     '123.456.789-10' => [
         'titular' => 'Maria',
-        'saldo' => 10000
+        'saldo' => 100000
     ],
     '123.456.789-11' => [
         'titular' => 'Alberto',
-        'saldo' => 300
+        'saldo' => 3000
     ],
     '123.256.789-12' => [
         'titular' => 'Vinicius',
-        'saldo' => 100
+        'saldo' => 1000
     ]
 ];
 
 
-$contasCorrentes['123.256.789-12'] = depositar($contasCorrentes['123.256.789-12'], 95);
+$contasCorrentes['123.256.789-12'] = depositar($contasCorrentes['123.256.789-12'], 195);
 
 $contasCorrentes['123.456.789-10'] = sacar($contasCorrentes['123.456.789-10'], 500);
 $contasCorrentes['123.456.789-11'] = sacar($contasCorrentes['123.456.789-11'], 500);

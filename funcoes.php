@@ -9,7 +9,7 @@ function exibeMensagem(string $mensagem){
 function sacar(array $conta, float $valorASacar)
 {
     if ($valorASacar > $conta['saldo']) {
-        exibeMensagem("Você não pode sacar este valor");
+        exibeMensagem("Atenção: Você não pode sacar este valor");
     } else {
         $conta['saldo'] -= $valorASacar;
     }
@@ -22,7 +22,7 @@ function sacar(array $conta, float $valorASacar)
 function depositar(array $conta, float $valorADepositar)
 {
 	if ($valorADepositar < 0) {
-		echo "Você não pode fazer um deposito negativo" .PHP_EOL;
+		echo "Atenção: Você não pode fazer um deposito negativo" .PHP_EOL;
 	} else{
 		$conta['saldo'] += $valorADepositar;
 	}
