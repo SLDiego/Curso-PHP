@@ -30,7 +30,7 @@ function depositar(array $conta, float $valorADepositar)
 }
 
 
-
+//Para usar a passagem de referência basta colocar o caracter & na frente da variável
 function titularComLetrasMaiusculas(array &$conta)
 {
 	$conta['titular'] = mb_strtoupper($conta['titular']);

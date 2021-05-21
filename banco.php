@@ -35,6 +35,10 @@ $contasCorrentes['123.456.789-10'] = sacar($contasCorrentes['123.456.789-10'], 5
 $contasCorrentes['123.456.789-11'] = sacar($contasCorrentes['123.456.789-11'], 500);
 
 
+//unset remove variaveis da memoria, inclusive remover itens de uma lista
+unset($contasCorrentes['123.456.789-11']);
+
+
 titularComLetrasMaiusculas($contasCorrentes['123.256.789-12']);
 
 
